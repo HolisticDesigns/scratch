@@ -12,10 +12,64 @@ function roots_widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
+  
+    register_sidebar(array(
+    'name'          => __('Blog Sidebar', 'roots'),
+    'id'            => 'blog-sidebar',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+    register_sidebar(array(
+    'name'          => __('Footer Column 1', 'roots'),
+    'id'            => 'footer-one',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+      register_sidebar(array(
+    'name'          => __('Footer Column 2', 'roots'),
+    'id'            => 'footer-two',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+    register_sidebar(array(
+    'name'          => __('Footer Column 3', 'roots'),
+    'id'            => 'footer-three',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+    register_sidebar(array(
+    'name'          => __('Footer Column 4', 'roots'),
+    'id'            => 'footer-four',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
 
   register_sidebar(array(
-    'name'          => __('Footer', 'roots'),
-    'id'            => 'sidebar-footer',
+    'name'          => __('Footer Copyright', 'roots'),
+    'id'            => 'footer-copyright',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+    register_sidebar(array(
+    'name'          => __('Footer Links', 'roots'),
+    'id'            => 'footer-links',
     'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
     'after_widget'  => '</div></section>',
     'before_title'  => '<h3>',
